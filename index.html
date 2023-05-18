@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project | Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="openBtn">
+        <button class="openButton" onclick="openForm()"><strong>Open Form</strong></button>
+      </div>
+    <div id="content">
+
+    </div>
+
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h2>Enter Book Details</h2>
+
+            <label for="title">
+              <strong>Book Title</strong>
+            </label>
+            <input type="text" id="title" placeholder="Book Title" name="title" required>
+
+            <label for="author">
+              <strong>Author</strong>
+            </label>
+            <input type="text" id="author" placeholder="Book Author" name="author" required>
+
+            <label for="pages">
+                <strong>Number of Pages</strong>
+              </label>
+            <input type="number" id="pages" placeholder="" name="pages" min="1" max="10000" required>
+
+            <div class="category">
+                <strong class="radio">Category</strong>
+                <div class="read">
+                    <input type="radio" id="to-be-read" name="read" value="to-be-read">
+                    <label for="to-be-read">To Be Read</label><br>
+                </div>
+                <div class="toBeRead">
+                    <input type="radio" id="read" name="read" value="read">
+                    <label for="read">Read</label><br>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+          </form>
+        </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
