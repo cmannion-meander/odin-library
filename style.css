@@ -2,6 +2,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     height: 100vh;
+    margin: 50px;
+    padding: 50px;
 }
 
 .controls {
@@ -100,4 +102,12 @@ body {
 
   .radio {
     grid-column: 1 / 3;
+  }
+
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 5px;
+    width: 50px;
   }
